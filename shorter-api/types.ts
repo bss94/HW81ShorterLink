@@ -3,3 +3,8 @@ export interface ILink{
   shortUrl: string;
   originalUrl: string;
 }
+
+export interface ILinkMutation{
+  shortUrl: string;
+  originalUrl: string;
+}
