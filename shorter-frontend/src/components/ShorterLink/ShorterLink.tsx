@@ -1,9 +1,28 @@
+import Grid from '@mui/material/Grid2';
+import {Link, Typography} from '@mui/material';
+import {API_URL} from '../../constants.ts';
+import React from 'react';
 
-const ShorterLink = () => {
+interface Props {
+  shortUrl: string,
+}
+
+const ShorterLink: React.FC<Props> = ({
+  shortUrl
+}) => {
   return (
-    <div>
-      
-    </div>
+    <Grid container sx={{my: 2}}>
+      <Grid size={12}>
+        <Typography variant="h6" sx={{mt: 2, textAlign: 'center'}}>
+          Your link now looks like this :
+        </Typography>
+        <Link href={`${API_URL}/links/'${shortUrl}`}>
+          <Typography variant="h4" sx={{mt: 2, textAlign: 'center'}}>
+            {API_URL + '/' + shortUrl}
+          </Typography>
+        </Link>
+      </Grid>
+    </Grid>
   );
 };
 
