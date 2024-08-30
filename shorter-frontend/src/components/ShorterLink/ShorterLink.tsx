@@ -16,7 +16,7 @@ const ShorterLink: React.FC<Props> = ({
         <Typography variant="h6" sx={{mt: 2, textAlign: 'center'}}>
           Your link now looks like this :
         </Typography>
-        <Link href={`${API_URL}/links/'${shortUrl}`}>
+        <Link href={`${API_URL}/${shortUrl}`}>
           <Typography variant="h4" sx={{mt: 2, textAlign: 'center'}}>
             {API_URL + '/' + shortUrl}
           </Typography>
