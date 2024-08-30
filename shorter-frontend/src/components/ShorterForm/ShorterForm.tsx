@@ -45,7 +45,7 @@ const ShorterForm: React.FC<Props> = ({
                        loadingPosition="center"
                        variant="contained"
         >
-          <span>Save</span>
+          <span>Shorten</span>
         </LoadingButton>
       </Grid>
     </Grid>
